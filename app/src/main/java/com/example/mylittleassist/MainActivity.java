@@ -4,46 +4,49 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
 public class MainActivity extends AppCompatActivity {
 
-    HomeFragment homeFragment;
-    ListFragment listFragment;
-    CalanderFragment calanderFragment;
+    ActionBar actionBar;
+
+    BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        actionBar = getSupportActionBar();
+        actionBar.setTitle("악보");
 
-        homeFragment = new HomeFragment();
-        listFragment = new ListFragment();
-        calanderFragment = new CalanderFragment();
+        FragMusicSheet fragMusicSheet = new FragMusicSheet();
+       // FragGroup fragGroup = new FragGroup();
+        getSupportFragmentManager().beginTransaction().replace(R.id.frag_container, fragMusicSheet).commit();
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.container,homeFragment).commit();
-
-        NavigationBarView navigationBarView = findViewById(R.id.bottom_navigationview);
-        navigationBarView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+        bottomNavigationView = findViewById(R.id.bottom_nav);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
-                switch (item.getItemId())
-                {
+                switch (item.getItemId()) {
                     case R.id.home:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container,homeFragment).commit();
+                        actionBar.setTitle("악보");
+                        getSupportFragmentManager().beginTransaction().replace(R.id.frag_container, fragMusicSheet).commit();
                         return true;
+
                     case R.id.list:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container,listFragment).commit();
+                        actionBar.setTitle("그룹");
+                        getSupportFragmentManager().beginTransaction().replace(R.id.frag_container, fragMusicSheet).commit();
                         return true;
+
                     case R.id.calendar:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container,calanderFragment).commit();
+                        actionBar.setTitle("마이페이지");
                         return true;
                 }
-
                 return false;
             }
         });

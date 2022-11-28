@@ -12,15 +12,15 @@ import com.example.mylittleassist.ItemSheetList;
 import com.example.mylittleassist.R;
 
 import java.util.ArrayList;
-
 public class ItemSheetAdapter extends RecyclerView.Adapter<ItemSheetAdapter.ViewHolder> {
 
     ArrayList<ItemSheetList> items = new ArrayList<ItemSheetList>();
 
+    @NonNull
     @Override
     public ItemSheetAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View itemView = inflater.inflate(R.layout.listviewlayout, parent, false);
+        View itemView = inflater.inflate(R.layout.item_sheet_list, parent, false);
         return new ViewHolder(itemView);
     }
 
