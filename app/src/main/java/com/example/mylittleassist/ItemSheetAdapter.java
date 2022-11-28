@@ -55,8 +55,8 @@ public class ItemSheetAdapter extends RecyclerView.Adapter<ItemSheetAdapter.View
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-         //   song_name = itemView.findViewById(R.id.txv_song_name);
-         //   singer    = itemView.findViewById(R.id.txv_singer);
+            song_name = itemView.findViewById(R.id.txv_song_name);
+            singer    = itemView.findViewById(R.id.txv_singer);
         }
 
         public void setItem(ItemSheetList item) {
