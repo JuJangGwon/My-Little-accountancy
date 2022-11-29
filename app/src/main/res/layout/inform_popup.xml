@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="349dp"
+        android:layout_height="624dp"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="12dp">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="160dp"
+            android:background="@color/purple_200"
+            android:gravity="center"
+            android:text="임대물 정보"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.033" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="47dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="4dp"
+            android:text="수정"
+            android:textSize="7dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="349dp"
+            android:layout_height="481dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/txt_contents"
+                android:layout_width="86dp"
+                android:layout_height="21dp"
+                android:text="임대여부 : "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.099"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.058" />
+
+            <TextView
+                android:id="@+id/txt_contents2"
+                android:layout_width="86dp"
+                android:layout_height="21dp"
+                android:text="규격 "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.099"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.126" />
+
+            <TextView
+                android:id="@+id/txt_contents3"
+                android:layout_width="115dp"
+                android:layout_height="26dp"
+                android:text="제작일/제작회사"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.111"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.191" />
+
+            <TextView
+                android:id="@+id/txt_contents5"
+                android:layout_width="86dp"
+                android:layout_height="21dp"
+                android:text="옵션 : "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.099"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.273" />
+
+            <TextView
+                android:id="@+id/txt_contents13"
+                android:layout_width="86dp"
+                android:layout_height="21dp"
+                android:text="임대자 : "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.099"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.452" />
+
+            <TextView
+                android:id="@+id/txt_contents10"
+                android:layout_width="86dp"
+                android:layout_height="21dp"
+                android:text="임대료 : "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.099"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.53" />
+
+            <TextView
+                android:id="@+id/txt_contents11"
+                android:layout_width="86dp"
+                android:layout_height="21dp"
+                android:text="임대기간 : "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.099"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.604" />
+
+            <TextView
+                android:id="@+id/txt_contents15"
+                android:layout_width="86dp"
+                android:layout_height="21dp"
+                android:text="임대물 주소 : "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.098"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.682" />
+
+            <TextView
+                android:id="@+id/txt_contents14"
+                android:layout_width="106dp"
+                android:layout_height="23dp"
+                android:text="운반비 지급 방식 : "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.106"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.755" />
+
+            <TextView
+                android:id="@+id/txt_contents16"
+                android:layout_width="106dp"
+                android:layout_height="23dp"
+                android:text="결제내역 : "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.106"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.827" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="57dp"
+                android:layout_height="30dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="110dp"
+                tools:layout_editor_absoluteY="150dp">
+
+                <ImageView
+                    android:layout_width="57dp"
+                    android:layout_height="30dp"
+                    android:src="@android:drawable/editbox_background"
+                    tools:ignore="MissingConstraints"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="에어컨"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="57dp"
+                android:layout_height="30dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="170dp"
+                tools:layout_editor_absoluteY="150dp">
+
+                <ImageView
+                    android:layout_width="57dp"
+                    android:layout_height="30dp"
+                    android:src="@android:drawable/editbox_background"
+                    tools:ignore="MissingConstraints"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="냉난방기"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="57dp"
+                android:layout_height="30dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="230dp"
+                tools:layout_editor_absoluteY="150dp">
+
+                <ImageView
+                    android:layout_width="57dp"
+                    android:layout_height="30dp"
+                    android:src="@android:drawable/editbox_background"
+                    tools:ignore="MissingConstraints"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="전기판넬"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="57dp"
+                android:layout_height="30dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="290dp"
+                tools:layout_editor_absoluteY="150dp">
+
+                <ImageView
+                    android:layout_width="57dp"
+                    android:layout_height="30dp"
+                    android:src="@android:drawable/editbox_background"
+                    tools:ignore="MissingConstraints"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="스틸 돌출배관"
+                    android:textColor="@color/black"
+                    android:textSize="7dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="57dp"
+                android:layout_height="30dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="110dp"
+                tools:layout_editor_absoluteY="177dp">
+
+                <ImageView
+                    android:layout_width="57dp"
+                    android:layout_height="30dp"
+                    android:src="@android:drawable/editbox_background"
+                    tools:ignore="MissingConstraints"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="불연재합판"
+                    android:textColor="@color/black"
+                    android:textSize="9dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="57dp"
+                android:layout_height="30dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="170dp"
+                tools:layout_editor_absoluteY="177dp">
+
+                <ImageView
+                    android:layout_width="57dp"
+                    android:layout_height="30dp"
+                    android:src="@android:drawable/editbox_background"
+                    tools:ignore="MissingConstraints"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="바닥 합판"
+                    android:textColor="@color/black"
+                    android:textSize="9dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="57dp"
+                android:layout_height="30dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="230dp"
+                tools:layout_editor_absoluteY="177dp">
+
+                <ImageView
+                    android:layout_width="57dp"
+                    android:layout_height="30dp"
+                    android:src="@android:drawable/editbox_background"
+                    tools:ignore="MissingConstraints"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="철재환풍기"
+                    android:textColor="@color/black"
+                    android:textSize="9dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="57dp"
+                android:layout_height="30dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="290dp"
+                tools:layout_editor_absoluteY="177dp">
+
+                <ImageView
+                    android:layout_width="57dp"
+                    android:layout_height="30dp"
+                    android:src="@android:drawable/editbox_background"
+                    tools:ignore="MissingConstraints"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아크누전기"
+                    android:textColor="@color/black"
+                    android:textSize="9dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/btn_shutdown"
+            android:layout_width="141dp"
+            android:layout_height="55dp"
+            android:onClick="shutDownClick"
+            android:text="Done"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintVertical_bias="0.609" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
