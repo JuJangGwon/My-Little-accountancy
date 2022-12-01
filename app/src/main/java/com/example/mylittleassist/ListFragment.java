@@ -51,23 +51,6 @@ public class ListFragment extends Fragment {
 
         adapter = new ItemSheetAdapter();
 
-        adapter.addItem(new ItemSheetList("내 손을 잡아", "아이유(IU)"));
-        adapter.addItem(new ItemSheetList("내 손을 잡아", "아이유(IU)"));
-        adapter.addItem(new ItemSheetList("내 손을 잡아", "아이유(IU)"));
-        adapter.addItem(new ItemSheetList("내 손을 잡아", "아이유(IU)"));
-        adapter.addItem(new ItemSheetList("내 손을 잡아", "아이유(IU)"));
-        adapter.addItem(new ItemSheetList("내 손을 잡아", "아이유(IU)"));
-        adapter.addItem(new ItemSheetList("내 손을 잡아", "아이유(IU)"));
-        adapter.addItem(new ItemSheetList("내 손을 잡아", "아이유(IU)"));
-        adapter.addItem(new ItemSheetList("내 손을 잡아", "아이유(IU)"));
-        adapter.addItem(new ItemSheetList("내 손을 잡아", "아이유(IU)"));
-        adapter.addItem(new ItemSheetList("내 손을 잡아", "아이유(IU)"));
-        adapter.addItem(new ItemSheetList("내 손을 잡아", "아이유(IU)"));
-        adapter.addItem(new ItemSheetList("내 손을 잡아", "아이유(IU)"));
-        adapter.addItem(new ItemSheetList("내 손을 잡아", "아이유(IU)"));
-        adapter.addItem(new ItemSheetList("내 손을 잡아", "아이유(IU)"));
-        adapter.addItem(new ItemSheetList("내 손을 잡아", "아이유(IU)"));
-        adapter.addItem(new ItemSheetList("내 손을 잡아", "아이유(IU)"));
 
         recyclerView.setAdapter(adapter);
 

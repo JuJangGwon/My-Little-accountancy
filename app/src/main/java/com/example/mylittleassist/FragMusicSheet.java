@@ -24,9 +24,14 @@ public class FragMusicSheet extends Fragment {
     private List<ItemSheetList> userList;
     private List<ItemSheetList> saveList;
 
+    Informpopup informpopup;
     RecyclerView recyclerView;
     ItemSheetAdapter adapter;
+    AddInformPopup addInformPopup;
+
     Context context;
+
+    Button addinform_b;
 
     @Override
     public void onAttach(@NonNull Context context) {
@@ -49,7 +54,14 @@ public class FragMusicSheet extends Fragment {
 
         initUI(rootView);
 
-
+        addinform_b = (Button)rootView.findViewById(R.id.addinform);
+        addinform_b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                addInformPopup = new AddInformPopup(context);
+                addInformPopup.show();
+            }
+        });
         Button btn1 = (Button)rootView.findViewById(R.id.button1);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,9 +75,12 @@ public class FragMusicSheet extends Fragment {
             //아이템 클릭시 토스트메시지
             @Override
             public void onItemClick(View v, int position) {
-                String name = adapter.getItem(position).song_name;
-                String number = adapter.getItem(position).song_name;
-                Toast.makeText (context, "이름 : "+name+"\n전화번호 : "+number, Toast.LENGTH_SHORT).show ();
+              //  String name = adapter.getItem(position).song_name;
+              //  String number = adapter.getItem(position).song_name;
+              //  Toast.makeText (context, "이름 : "+name+"\n전화번호 : "+number, Toast.LENGTH_SHORT).show ();
+                informpopup = new Informpopup(context, adapter.getItem(position).data_useable, adapter.getItem(position).data_standard, adapter.getItem(position).data_madein, adapter.getItem(position).data_name, adapter.getItem(position).data_fee, adapter.getItem(position).data_where, adapter.getItem(position).data_date, adapter.getItem(position).data_date);
+                informpopup.show();
+
             }
         });
 

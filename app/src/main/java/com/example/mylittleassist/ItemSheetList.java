@@ -1,8 +1,7 @@
 package com.example.mylittleassist;
 
 public class ItemSheetList {
-    String song_name;
-    String singer;
+
     String data_useable;
     String data_standard;
     String data_madein;
@@ -13,10 +12,6 @@ public class ItemSheetList {
     String data_transport_fee;
     String data_now;
 
-    public ItemSheetList(String song_name, String singer) {
-        this.song_name = song_name;
-        this.singer = singer;
-    }
     public ItemSheetList(String a, String b,String c,String d,String e,String f,String g,String h) {
         this.data_useable = a;
         this.data_standard = b;
@@ -29,19 +24,4 @@ public class ItemSheetList {
     //    this.data_now = i;
     }
 
-    public String getSong_name() {
-        return song_name;
-    }
-
-    public void setSong_name(String song_name) {
-        this.song_name = song_name;
-    }
-
-    public String getSinger() {
-        return singer;
-    }
-
-    public void setSinger(String singer) {
-        this.singer = singer;
-    }
 }

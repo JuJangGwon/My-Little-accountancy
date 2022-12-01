@@ -53,11 +53,14 @@
 
             <TextView
                 android:id="@+id/txt_contents"
-                android:layout_width="86dp"
+                android:layout_width="0dp"
                 android:layout_height="21dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="20dp"
                 android:text="임대여부"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/data_useable"
                 app:layout_constraintHorizontal_bias="0.099"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -65,11 +68,14 @@
 
             <TextView
                 android:id="@+id/txt_contents2"
-                android:layout_width="86dp"
+                android:layout_width="0dp"
                 android:layout_height="21dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="20dp"
                 android:text="규격 "
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/data_standard"
                 app:layout_constraintHorizontal_bias="0.099"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -77,11 +83,14 @@
 
             <TextView
                 android:id="@+id/txt_contents3"
-                android:layout_width="103dp"
+                android:layout_width="0dp"
                 android:layout_height="28dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginEnd="2dp"
                 android:text="제작일/제작회사"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/data_madein"
                 app:layout_constraintHorizontal_bias="0.111"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -113,11 +122,14 @@
 
             <TextView
                 android:id="@+id/txt_contents10"
-                android:layout_width="86dp"
+                android:layout_width="0dp"
                 android:layout_height="21dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="20dp"
                 android:text="임대료"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/data_fee"
                 app:layout_constraintHorizontal_bias="0.099"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -151,8 +163,8 @@
                 android:id="@+id/txt_contents14"
                 android:layout_width="105dp"
                 android:layout_height="29dp"
-                android:textSize="12dp"
                 android:text="운반비 지급 방식"
+                android:textSize="12dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.106"
@@ -173,28 +185,36 @@
                 app:layout_constraintVertical_bias="0.827" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="57dp"
-                android:layout_height="30dp"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="110dp"
-                tools:layout_editor_absoluteY="150dp">
+                android:id="@+id/constraintLayout2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/constraintLayout9"
+                app:layout_constraintEnd_toEndOf="@+id/constraintLayout6"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayout6"
+                app:layout_constraintTop_toBottomOf="@+id/data_madein"
+                tools:ignore="MissingConstraints">
 
                 <ImageView
-                    android:layout_width="57dp"
-                    android:layout_height="30dp"
+                    android:id="@+id/imageView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:src="@android:drawable/editbox_background"
-                    tools:ignore="MissingConstraints"
 
-                    />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
 
                 <TextView
+                    android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="에어컨"
                     android:textColor="@color/black"
                     android:textSize="10dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
 
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -203,28 +223,32 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="57dp"
-                android:layout_height="30dp"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="170dp"
-                tools:layout_editor_absoluteY="150dp">
+                android:id="@+id/constraintLayout3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/constraintLayout4"
+                app:layout_constraintEnd_toEndOf="@+id/constraintLayout7"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayout7"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout4"
+                tools:ignore="MissingConstraints">
 
                 <ImageView
+                    android:id="@+id/imageView2"
                     android:layout_width="57dp"
                     android:layout_height="30dp"
                     android:src="@android:drawable/editbox_background"
-                    tools:ignore="MissingConstraints"
 
-                    />
+                    tools:ignore="MissingConstraints" />
 
                 <TextView
+                    android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="냉난방기"
                     android:textColor="@color/black"
                     android:textSize="10dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
 
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -233,28 +257,34 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="57dp"
-                android:layout_height="30dp"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="230dp"
-                tools:layout_editor_absoluteY="150dp">
+                android:id="@+id/constraintLayout4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginEnd="3dp"
+                app:layout_constraintBottom_toBottomOf="@+id/constraintLayout5"
+                app:layout_constraintEnd_toStartOf="@+id/constraintLayout9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout5"
+                tools:ignore="MissingConstraints">
 
                 <ImageView
+                    android:id="@+id/imageView3"
                     android:layout_width="57dp"
                     android:layout_height="30dp"
                     android:src="@android:drawable/editbox_background"
-                    tools:ignore="MissingConstraints"
 
-                    />
+                    tools:ignore="MissingConstraints" />
 
                 <TextView
+                    android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="전기판넬"
                     android:textColor="@color/black"
                     android:textSize="10dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
 
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -263,28 +293,35 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="57dp"
-                android:layout_height="30dp"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="290dp"
-                tools:layout_editor_absoluteY="150dp">
+                android:id="@+id/constraintLayout5"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="99dp"
+                app:layout_constraintBottom_toTopOf="@+id/data_date"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/constraintLayout8"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
 
                 <ImageView
+                    android:id="@+id/imageView4"
                     android:layout_width="57dp"
                     android:layout_height="30dp"
                     android:src="@android:drawable/editbox_background"
-                    tools:ignore="MissingConstraints"
 
-                    />
+                    tools:ignore="MissingConstraints" />
 
                 <TextView
+                    android:id="@+id/textView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="스틸 돌출배관"
                     android:textColor="@color/black"
                     android:textSize="7dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
 
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -293,28 +330,34 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="57dp"
-                android:layout_height="30dp"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="110dp"
-                tools:layout_editor_absoluteY="177dp">
+                android:id="@+id/constraintLayout6"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="110dp"
+                android:layout_marginEnd="3dp"
+                app:layout_constraintBottom_toTopOf="@+id/constraintLayout7"
+                app:layout_constraintEnd_toStartOf="@+id/constraintLayout7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout9"
+                tools:ignore="MissingConstraints">
 
                 <ImageView
+                    android:id="@+id/imageView5"
                     android:layout_width="57dp"
                     android:layout_height="30dp"
                     android:src="@android:drawable/editbox_background"
-                    tools:ignore="MissingConstraints"
 
-                    />
+                    tools:ignore="MissingConstraints" />
 
                 <TextView
+                    android:id="@+id/textView7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="불연재합판"
                     android:textColor="@color/black"
                     android:textSize="9dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
 
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -323,28 +366,34 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="57dp"
-                android:layout_height="30dp"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="170dp"
-                tools:layout_editor_absoluteY="177dp">
+                android:id="@+id/constraintLayout7"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginBottom="1dp"
+                app:layout_constraintBottom_toTopOf="@+id/data_name"
+                app:layout_constraintEnd_toStartOf="@+id/constraintLayout8"
+                app:layout_constraintStart_toEndOf="@+id/constraintLayout6"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout6"
+                tools:ignore="MissingConstraints">
 
                 <ImageView
+                    android:id="@+id/imageView6"
                     android:layout_width="57dp"
                     android:layout_height="30dp"
                     android:src="@android:drawable/editbox_background"
-                    tools:ignore="MissingConstraints"
 
-                    />
+                    tools:ignore="MissingConstraints" />
 
                 <TextView
+                    android:id="@+id/textView8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="바닥 합판"
                     android:textColor="@color/black"
                     android:textSize="9dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
 
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -353,28 +402,33 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="57dp"
-                android:layout_height="30dp"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="230dp"
-                tools:layout_editor_absoluteY="177dp">
+                android:id="@+id/constraintLayout8"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="3dp"
+                app:layout_constraintBottom_toBottomOf="@+id/constraintLayout9"
+                app:layout_constraintEnd_toStartOf="@+id/constraintLayout5"
+                app:layout_constraintStart_toEndOf="@+id/constraintLayout7"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout9"
+                tools:ignore="MissingConstraints">
 
                 <ImageView
+                    android:id="@+id/imageView7"
                     android:layout_width="57dp"
                     android:layout_height="30dp"
                     android:src="@android:drawable/editbox_background"
-                    tools:ignore="MissingConstraints"
 
-                    />
+                    tools:ignore="MissingConstraints" />
 
                 <TextView
+                    android:id="@+id/textView9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="철재환풍기"
                     android:textColor="@color/black"
                     android:textSize="9dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
 
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -383,28 +437,33 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="57dp"
-                android:layout_height="30dp"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="290dp"
-                tools:layout_editor_absoluteY="177dp">
+                android:id="@+id/constraintLayout9"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="2dp"
+                app:layout_constraintBottom_toTopOf="@+id/constraintLayout6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/constraintLayout4"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+                tools:ignore="MissingConstraints">
 
                 <ImageView
+                    android:id="@+id/imageView8"
                     android:layout_width="57dp"
                     android:layout_height="30dp"
                     android:src="@android:drawable/editbox_background"
-                    tools:ignore="MissingConstraints"
 
-                    />
+                    tools:ignore="MissingConstraints" />
 
                 <TextView
+                    android:id="@+id/textView10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="아크누전기"
                     android:textColor="@color/black"
                     android:textSize="9dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
 
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -414,89 +473,127 @@
 
             <TextView
                 android:id="@+id/data_useable"
-                android:layout_width="152dp"
-                android:layout_height="29dp"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="65dp"
                 android:text="임대중"
-                tools:layout_editor_absoluteX="132dp"
-                tools:layout_editor_absoluteY="25dp" />
+                app:layout_constraintBottom_toTopOf="@+id/data_standard"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_contents"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                    android:id="@+id/data_standard"
-                android:layout_width="152dp"
-                android:layout_height="29dp"
+                android:id="@+id/data_standard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="65dp"
+                android:layout_marginBottom="4dp"
                 android:text="3-A"
-                tools:layout_editor_absoluteX="132dp"
-                tools:layout_editor_absoluteY="54dp" />
+                app:layout_constraintBottom_toTopOf="@+id/data_madein"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_contents2"
+                app:layout_constraintTop_toBottomOf="@+id/data_useable" />
 
             <TextView
                 android:id="@+id/data_madein"
-                android:layout_width="152dp"
-                android:layout_height="29dp"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="65dp"
+                android:layout_marginBottom="34dp"
                 android:text="2020년 1월 3일 / 광황"
-                tools:layout_editor_absoluteX="132dp"
-                tools:layout_editor_absoluteY="87dp" />
+                app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_contents3"
+                app:layout_constraintTop_toBottomOf="@+id/data_standard" />
 
             <TextView
                 android:id="@+id/data_name"
                 android:layout_width="152dp"
-                android:layout_height="29dp"
+                android:layout_height="0dp"
                 android:layout_marginStart="132dp"
+                android:layout_marginBottom="7dp"
                 android:text="홍길동"
+                app:layout_constraintBottom_toTopOf="@+id/data_fee"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="208dp" />
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout7" />
 
 
             <TextView
                 android:id="@+id/data_fee"
-                android:layout_width="152dp"
-                android:layout_height="29dp"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="65dp"
+                android:layout_marginBottom="6dp"
                 android:text="월 15만"
-                tools:layout_editor_absoluteX="132dp"
-                tools:layout_editor_absoluteY="244dp" />
+                app:layout_constraintBottom_toTopOf="@+id/data_date"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_contents10"
+                app:layout_constraintTop_toBottomOf="@+id/data_name" />
 
             <TextView
                 android:id="@+id/data_date"
                 android:layout_width="215dp"
-                android:layout_height="28dp"
+                android:layout_height="0dp"
                 android:layout_marginEnd="4dp"
+                android:layout_marginBottom="35dp"
                 android:text="2022년 1월 15일 ~ 2023년 1월 14일"
                 android:textSize="12dp"
+                app:layout_constraintBottom_toTopOf="@+id/data_transport_fee"
                 app:layout_constraintEnd_toEndOf="parent"
-                tools:layout_editor_absoluteY="279dp" />
+                app:layout_constraintTop_toBottomOf="@+id/data_fee" />
 
             <TextView
                 android:id="@+id/data_where"
                 android:layout_width="215dp"
-                android:layout_height="37dp"
+                android:layout_height="0dp"
                 android:layout_marginEnd="4dp"
+                android:layout_marginBottom="135dp"
                 android:text="서울 구로구 연동로 320 00-00"
                 android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                tools:layout_editor_absoluteY="309dp" />
+                app:layout_constraintTop_toBottomOf="@+id/data_date" />
 
             <TextView
                 android:id="@+id/data_transport_fee"
                 android:layout_width="152dp"
-                android:layout_height="29dp"
+                android:layout_height="0dp"
                 android:layout_marginStart="132dp"
+                android:layout_marginBottom="3dp"
                 android:text="왕복"
+                app:layout_constraintBottom_toTopOf="@+id/data_now"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="342dp" />
+                app:layout_constraintTop_toBottomOf="@+id/data_date" />
 
             <TextView
                 android:id="@+id/data_now"
                 android:layout_width="152dp"
-                android:layout_height="29dp"
+                android:layout_height="0dp"
                 android:layout_marginStart="132dp"
+                android:layout_marginBottom="78dp"
                 android:text="완납"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="374dp" />
+                app:layout_constraintTop_toBottomOf="@+id/data_transport_fee" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <Button
             android:id="@+id/btn_shutdown"
+            android:layout_width="141dp"
+            android:layout_height="55dp"
+            android:onClick="shutDownClick"
+            android:text="Done"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintVertical_bias="0.609" />
+
+        <Button
+            android:id="@+id/btn_shutdown2"
             android:layout_width="141dp"
             android:layout_height="55dp"
             android:onClick="shutDownClick"
