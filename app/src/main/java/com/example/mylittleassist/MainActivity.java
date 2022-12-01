@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         actionBar = getSupportActionBar();
-        actionBar.setTitle("악보");
+        actionBar.setTitle("컨테이너 리스트");
 
         FragMusicSheet fragMusicSheet = new FragMusicSheet();
        // FragGroup fragGroup = new FragGroup();

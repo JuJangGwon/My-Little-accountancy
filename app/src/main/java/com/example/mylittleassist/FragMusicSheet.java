@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.view.animation.LinearInterpolator;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -54,6 +55,17 @@ public class FragMusicSheet extends Fragment {
             @Override
             public void onClick(View view) {
                 initUI2(rootView);
+            }
+        });
+
+        adapter.setOnItemClickListener(new ItemSheetAdapter.OnItemClickListener () {
+
+            //아이템 클릭시 토스트메시지
+            @Override
+            public void onItemClick(View v, int position) {
+                String name = adapter.getItem(position).song_name;
+                String number = adapter.getItem(position).song_name;
+                Toast.makeText (context, "이름 : "+name+"\n전화번호 : "+number, Toast.LENGTH_SHORT).show ();
             }
         });
 
@@ -99,11 +111,13 @@ public class FragMusicSheet extends Fragment {
 
         adapter = new ItemSheetAdapter();
 
-        adapter.addItem(new ItemSheetList("내 손을 잡아", "아이유(IU)"));
-        adapter.addItem(new ItemSheetList("dd", "아이유(IU)"));
-        adapter.addItem(new ItemSheetList("ff", "아이유(IU)"));
-        adapter.addItem(new ItemSheetList("내 손을 잡아", "아이유(IU)"));
-        adapter.addItem(new ItemSheetList("내 손을 잡아", "아이유(IU)"));
+        //saveList.add(new ItemSheetList("3-3형", "1호"));
+        // 사용중인지, 규격 / 어디서 만들었는지 / 이름 / 요금 / 기간 / 위치 / 운송료 /
+        adapter.addItem(new ItemSheetList("사용 중","3-3형","2022년 10월 24일 | 광주","홍길동","월 15만원","2022.01.14~2022.02.14","서울 구로구 연동로 320","왕복 지불 "));
+        adapter.addItem(new ItemSheetList("사용 가능","3-6형","2022년 11월 11일 | 광주","홍길동","월 15만원","2022.01.14~2022.02.14","서울 구로구 연동로 320","왕복 지불 "));
+        adapter.addItem(new ItemSheetList("사용 가능","3-6형","2022년 3월 22일 | 광주","홍길동","월 15만원","2022.01.14~2022.02.14","서울 구로구 연동로 320","왕복 지불 "));
+        adapter.addItem(new ItemSheetList("사용 기능","3-7형","2022년 1월 24일 | 광주","홍길동","월 15만원","2022.01.14~2022.02.14","서울 구로구 연동로 320","왕복 지불 "));
+        adapter.addItem(new ItemSheetList("사용 가능","3-7형","2022년 5월 2일 | 광주","홍길동","월 15만원","2022.01.14~2022.02.14","서울 구로구 연동로 320","왕복 지불 "));
 
         recyclerView.setAdapter(adapter);
     }
@@ -115,12 +129,6 @@ public class FragMusicSheet extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
 
         adapter = new ItemSheetAdapter();
-
-        adapter.addItem(new ItemSheetList("oio", "아이유(IU)"));
-        adapter.addItem(new ItemSheetList("dd", "아이유(IU)"));
-        adapter.addItem(new ItemSheetList("ff", "아이유(IU)"));
-        adapter.addItem(new ItemSheetList("내 손을 잡아", "아이유(IU)"));
-        adapter.addItem(new ItemSheetList("내 손을 잡아", "아이유(IU)"));
 
         recyclerView.setAdapter(adapter);
     }

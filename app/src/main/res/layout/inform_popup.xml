@@ -10,7 +10,8 @@
         android:layout_width="349dp"
         android:layout_height="624dp"
         tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="12dp">
+        tools:layout_editor_absoluteY="12dp"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/textView5"
@@ -54,7 +55,7 @@
                 android:id="@+id/txt_contents"
                 android:layout_width="86dp"
                 android:layout_height="21dp"
-                android:text="임대여부 : "
+                android:text="임대여부"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.099"
@@ -76,8 +77,8 @@
 
             <TextView
                 android:id="@+id/txt_contents3"
-                android:layout_width="115dp"
-                android:layout_height="26dp"
+                android:layout_width="103dp"
+                android:layout_height="28dp"
                 android:text="제작일/제작회사"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -90,7 +91,7 @@
                 android:id="@+id/txt_contents5"
                 android:layout_width="86dp"
                 android:layout_height="21dp"
-                android:text="옵션 : "
+                android:text="옵션"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.099"
@@ -102,7 +103,7 @@
                 android:id="@+id/txt_contents13"
                 android:layout_width="86dp"
                 android:layout_height="21dp"
-                android:text="임대자 : "
+                android:text="임대자"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.099"
@@ -114,7 +115,7 @@
                 android:id="@+id/txt_contents10"
                 android:layout_width="86dp"
                 android:layout_height="21dp"
-                android:text="임대료 : "
+                android:text="임대료"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.099"
@@ -126,7 +127,7 @@
                 android:id="@+id/txt_contents11"
                 android:layout_width="86dp"
                 android:layout_height="21dp"
-                android:text="임대기간 : "
+                android:text="임대기간"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.099"
@@ -138,7 +139,7 @@
                 android:id="@+id/txt_contents15"
                 android:layout_width="86dp"
                 android:layout_height="21dp"
-                android:text="임대물 주소 : "
+                android:text="임대물 주소"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.098"
@@ -148,9 +149,10 @@
 
             <TextView
                 android:id="@+id/txt_contents14"
-                android:layout_width="106dp"
-                android:layout_height="23dp"
-                android:text="운반비 지급 방식 : "
+                android:layout_width="105dp"
+                android:layout_height="29dp"
+                android:textSize="12dp"
+                android:text="운반비 지급 방식"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.106"
@@ -160,9 +162,9 @@
 
             <TextView
                 android:id="@+id/txt_contents16"
-                android:layout_width="106dp"
-                android:layout_height="23dp"
-                android:text="결제내역 : "
+                android:layout_width="89dp"
+                android:layout_height="30dp"
+                android:text="납입현황"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.106"
@@ -409,6 +411,86 @@
                     tools:ignore="MissingConstraints" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/data_useable"
+                android:layout_width="152dp"
+                android:layout_height="29dp"
+                android:text="임대중"
+                tools:layout_editor_absoluteX="132dp"
+                tools:layout_editor_absoluteY="25dp" />
+
+            <TextView
+                    android:id="@+id/data_standard"
+                android:layout_width="152dp"
+                android:layout_height="29dp"
+                android:text="3-A"
+                tools:layout_editor_absoluteX="132dp"
+                tools:layout_editor_absoluteY="54dp" />
+
+            <TextView
+                android:id="@+id/data_madein"
+                android:layout_width="152dp"
+                android:layout_height="29dp"
+                android:text="2020년 1월 3일 / 광황"
+                tools:layout_editor_absoluteX="132dp"
+                tools:layout_editor_absoluteY="87dp" />
+
+            <TextView
+                android:id="@+id/data_name"
+                android:layout_width="152dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="132dp"
+                android:text="홍길동"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="208dp" />
+
+
+            <TextView
+                android:id="@+id/data_fee"
+                android:layout_width="152dp"
+                android:layout_height="29dp"
+                android:text="월 15만"
+                tools:layout_editor_absoluteX="132dp"
+                tools:layout_editor_absoluteY="244dp" />
+
+            <TextView
+                android:id="@+id/data_date"
+                android:layout_width="215dp"
+                android:layout_height="28dp"
+                android:layout_marginEnd="4dp"
+                android:text="2022년 1월 15일 ~ 2023년 1월 14일"
+                android:textSize="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="279dp" />
+
+            <TextView
+                android:id="@+id/data_where"
+                android:layout_width="215dp"
+                android:layout_height="37dp"
+                android:layout_marginEnd="4dp"
+                android:text="서울 구로구 연동로 320 00-00"
+                android:textSize="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="309dp" />
+
+            <TextView
+                android:id="@+id/data_transport_fee"
+                android:layout_width="152dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="132dp"
+                android:text="왕복"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="342dp" />
+
+            <TextView
+                android:id="@+id/data_now"
+                android:layout_width="152dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="132dp"
+                android:text="완납"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="374dp" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

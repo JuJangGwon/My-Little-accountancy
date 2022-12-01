@@ -12,23 +12,41 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/image"
-            android:layout_width="417dp"
-            android:layout_height="53dp" />
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/txv_song_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="test" />
-        <TextView
-            android:id="@+id/txv_singer"
-            android:layout_width="match_parent"
+            android:id="@+id/data_num"
+            android:layout_width="83dp"
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:text="test" />
 
+            <TextView
+                android:id="@+id/data_standard"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="test" />
+
+            <TextView
+                android:id="@+id/data_useable"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="대여중" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/data_where"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="서울 구로구 연동로 320" />
     </LinearLayout>
+
 </androidx.cardview.widget.CardView>
