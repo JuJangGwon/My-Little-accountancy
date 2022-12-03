@@ -3,6 +3,7 @@ import android.content.Context;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -16,6 +17,7 @@ import android.view.animation.LinearInterpolator;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import java.util.List;
 
@@ -27,7 +29,6 @@ public class FragMusicSheet extends Fragment {
     Informpopup informpopup;
     RecyclerView recyclerView;
     ItemSheetAdapter adapter;
-    AddInformPopup addInformPopup;
 
     Context context;
 
@@ -58,15 +59,17 @@ public class FragMusicSheet extends Fragment {
         addinform_b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                addInformPopup = new AddInformPopup(context);
-                addInformPopup.show();
+                AddInformFragment addinformFragment = new AddInformFragment();
+                getParentFragmentManager().beginTransaction().replace(R.id.frag_container, addinformFragment).commit();
             }
         });
         Button btn1 = (Button)rootView.findViewById(R.id.button1);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 initUI2(rootView);
+                ActionBar actionBar;
             }
         });
 
@@ -106,6 +109,7 @@ public class FragMusicSheet extends Fragment {
         */
         return rootView;
     }
+
     /*
     public void searchUser(String search){
         userList.clear();

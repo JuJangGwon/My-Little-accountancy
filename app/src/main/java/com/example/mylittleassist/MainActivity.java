@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         actionBar.setTitle("컨테이너 리스트");
 
         FragMusicSheet fragMusicSheet = new FragMusicSheet();
-       // FragGroup fragGroup = new FragGroup();
+        CalanderFragment calanderFragment = new CalanderFragment();
         getSupportFragmentManager().beginTransaction().replace(R.id.frag_container, fragMusicSheet).commit();
 
         bottomNavigationView = findViewById(R.id.bottom_nav);
@@ -34,13 +34,13 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.home:
-                        actionBar.setTitle("악보");
+                        actionBar.setTitle("컨테이너 리스트");
                         getSupportFragmentManager().beginTransaction().replace(R.id.frag_container, fragMusicSheet).commit();
                         return true;
 
                     case R.id.list:
-                        actionBar.setTitle("그룹");
-                        getSupportFragmentManager().beginTransaction().replace(R.id.frag_container, fragMusicSheet).commit();
+                        actionBar.setTitle("컨테이너 일정");
+                        getSupportFragmentManager().beginTransaction().replace(R.id.frag_container, calanderFragment).commit();
                         return true;
 
                     case R.id.calendar:

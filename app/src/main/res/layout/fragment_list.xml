@@ -12,6 +12,11 @@
         android:layout_height="match_parent"
         android:layout_marginBottom="?attr/actionBarSize">
 
+        <Button
+            android:id="@+id/button"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:text="Button" />
     </FrameLayout>
 
     <TextView
@@ -19,11 +24,5 @@
         android:layout_width="298dp"
         android:layout_height="38dp"
         android:text="TextView" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="69dp"
-        android:layout_height="wrap_content"
-        android:text="Button" />
 
 </FrameLayout>
