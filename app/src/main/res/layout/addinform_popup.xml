@@ -8,20 +8,21 @@
 
         //
 
-
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fillViewport="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@+id/textView20"
+                    app:layout_constraintTop_toTopOf="@+id/textView20">
 
                         <TextView
                             android:id="@+id/textView15"
@@ -36,7 +37,7 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <EditText
-                            android:id="@+id/editText3"
+                            android:id="@+id/inform_option"
                             android:layout_width="159dp"
                             android:layout_height="43dp"
                             android:layout_marginStart="116dp"
@@ -51,13 +52,14 @@
                             android:id="@+id/button5"
                             android:layout_width="75dp"
                             android:layout_height="38dp"
-                            android:layout_marginStart="300dp"
+                            android:layout_marginStart="296dp"
                             android:layout_marginTop="204dp"
                             android:background="@color/white"
                             android:text="선택"
                             android:textSize="17dp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
+
 
                         <TextView
                             android:id="@+id/textView22"
@@ -84,7 +86,7 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <EditText
-                            android:id="@+id/editText5"
+                            android:id="@+id/inform_fee"
                             android:layout_width="159dp"
                             android:layout_height="43dp"
                             android:layout_marginStart="124dp"
@@ -107,7 +109,7 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <EditText
-                            android:id="@+id/editText"
+                            android:id="@+id/inform_standard"
                             android:layout_width="159dp"
                             android:layout_height="43dp"
                             android:layout_marginStart="116dp"
@@ -142,8 +144,9 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
+
                         <EditText
-                            android:id="@+id/editText7"
+                            android:id="@+id/inform_where"
                             android:layout_width="159dp"
                             android:layout_height="43dp"
                             android:layout_marginStart="124dp"
@@ -154,7 +157,7 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <EditText
-                            android:id="@+id/editText10"
+                            android:id="@+id/inform_madein"
                             android:layout_width="159dp"
                             android:layout_height="43dp"
                             android:layout_marginStart="116dp"
@@ -190,7 +193,7 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <EditText
-                            android:id="@+id/editText2"
+                            android:id="@+id/inform_madeday"
                             android:layout_width="159dp"
                             android:layout_height="43dp"
                             android:layout_marginStart="116dp"
@@ -201,7 +204,7 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <EditText
-                            android:id="@+id/editText6"
+                            android:id="@+id/inform_transportfee"
                             android:layout_width="159dp"
                             android:layout_height="43dp"
                             android:layout_marginStart="124dp"
@@ -212,7 +215,7 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <EditText
-                            android:id="@+id/editText8"
+                            android:id="@+id/inform_mangername"
                             android:layout_width="159dp"
                             android:layout_height="43dp"
                             android:layout_marginStart="124dp"
@@ -222,17 +225,8 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
-                        <ToggleButton
-                            android:id="@+id/toggle"
-                            android:layout_width="93dp"
-                            android:layout_height="47dp"
-                            android:background="@drawable/toggle_off"
-                            android:textOff=""
-                            android:textOn=""
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            tools:ignore="MissingConstraints"
-                            tools:layout_editor_absoluteY="297dp" />
+
+                        />
 
                         <TextView
                             android:id="@+id/textView21"
@@ -295,7 +289,7 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <EditText
-                            android:id="@+id/editText9"
+                            android:id="@+id/data_phonenumber"
                             android:layout_width="159dp"
                             android:layout_height="43dp"
                             android:layout_marginStart="124dp"
@@ -306,7 +300,7 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <EditText
-                            android:id="@+id/editText4"
+                            android:id="@+id/data_company"
                             android:layout_width="159dp"
                             android:layout_height="43dp"
                             android:layout_marginStart="124dp"
@@ -327,8 +321,60 @@
                             android:textSize="20dp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <Button
+                            android:id="@+id/button7"
+                            android:layout_width="120dp"
+                            android:layout_height="65dp"
+                            android:layout_marginStart="68dp"
+                            android:layout_marginTop="664dp"
+                            android:background="@color/white"
+                            android:text="추가하기"
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Button
+                            android:id="@+id/button8"
+                            android:layout_width="120dp"
+                            android:layout_height="65dp"
+                            android:layout_marginStart="204dp"
+                            android:layout_marginTop="664dp"
+                            android:background="@color/white"
+                            android:text="취소하기"
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <RadioGroup
+                            android:id="@+id/radio_group"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="-70dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                                <RadioButton
+                                    android:id="@+id/inform_useyes"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="임대 중"
+                                    android:layout_marginEnd="10dp"/>
+                                <RadioButton
+                                    android:id="@+id/inform_useno"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="임대 X"
+                                    android:layout_marginEnd="10dp"/>
+
+                        </RadioGroup>
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
-                //
         </ScrollView>
 
 

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "269135946972",
+    "project_id": "mylittleassist",
+    "storage_bucket": "mylittleassist.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:269135946972:android:25c3797bc6b57a16104019",
+        "android_client_info": {
+          "package_name": "com.example.mylittleassist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "269135946972-rn39ccbki53rukaq3nod6v4t0hi2sqih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBtPdslV1ptS7w-Tu6xCg8Ba3r7P_RS54"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "269135946972-rn39ccbki53rukaq3nod6v4t0hi2sqih.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
