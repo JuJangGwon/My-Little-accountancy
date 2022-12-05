@@ -33,8 +33,6 @@ public class AddInformPopup extends Dialog {
         btnDialog = (Button)findViewById(R.id.button5);
         btnDialog2 = (Button)findViewById(R.id.button4);
 
-
-
         final List selectedItems = new ArrayList();
 
         btnDialog.setOnClickListener(new View.OnClickListener() {

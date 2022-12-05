@@ -145,6 +145,30 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
 
+                        <Button
+                            android:id="@+id/button"
+                            android:layout_width="80dp"
+                            android:layout_height="43dp"
+                            android:layout_marginStart="292dp"
+                            android:layout_marginTop="660dp"
+                            android:background="@color/white"
+                            android:text="선택"
+                            android:textSize="17dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="80dp"
+                            android:layout_height="43dp"
+                            android:layout_marginStart="292dp"
+                            android:layout_marginTop="716dp"
+                            android:background="@color/white"
+                            android:text="선택"
+                            android:textSize="17dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
                         <EditText
                             android:id="@+id/inform_where"
                             android:layout_width="159dp"
@@ -265,6 +289,30 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="100dp"
+                            android:layout_height="26dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="668dp"
+                            android:gravity="center"
+                            android:text="임대시작일"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="100dp"
+                            android:layout_height="26dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="716dp"
+                            android:gravity="center"
+                            android:text="임대종료일"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
                             android:id="@+id/textView16"
                             android:layout_width="122dp"
                             android:layout_height="28dp"
@@ -289,7 +337,7 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <EditText
-                            android:id="@+id/data_phonenumber"
+                            android:id="@+id/inform_phonnumber"
                             android:layout_width="159dp"
                             android:layout_height="43dp"
                             android:layout_marginStart="124dp"
@@ -299,8 +347,30 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
+                        <TextView
+                            android:id="@+id/inform_startday"
+                            android:layout_width="159dp"
+                            android:layout_height="38dp"
+                            android:layout_marginStart="124dp"
+                            android:layout_marginTop="660dp"
+                            android:textSize="17dp"
+                            android:background="@drawable/border"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/inform_endday"
+                            android:layout_width="159dp"
+                            android:layout_height="38dp"
+                            android:layout_marginStart="124dp"
+                            android:layout_marginTop="708dp"
+                            android:background="@drawable/border"
+                            android:textSize="17dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
                         <EditText
-                            android:id="@+id/data_company"
+                            android:id="@+id/inform_company"
                             android:layout_width="159dp"
                             android:layout_height="43dp"
                             android:layout_marginStart="124dp"
@@ -327,8 +397,8 @@
                             android:id="@+id/button7"
                             android:layout_width="120dp"
                             android:layout_height="65dp"
-                            android:layout_marginStart="68dp"
-                            android:layout_marginTop="664dp"
+                            android:layout_marginStart="60dp"
+                            android:layout_marginTop="780dp"
                             android:background="@color/white"
                             android:text="추가하기"
                             android:textSize="16dp"
@@ -339,23 +409,21 @@
                             android:id="@+id/button8"
                             android:layout_width="120dp"
                             android:layout_height="65dp"
-                            android:layout_marginStart="204dp"
-                            android:layout_marginTop="664dp"
+                            android:layout_marginStart="212dp"
+                            android:layout_marginTop="780dp"
                             android:background="@color/white"
                             android:text="취소하기"
                             android:textSize="16dp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
-
                         <RadioGroup
                             android:id="@+id/radio_group"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="130dp"
+                            android:layout_marginTop="305dp"
                             android:orientation="horizontal"
-                            android:layout_marginTop="-70dp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
 
@@ -363,14 +431,15 @@
                                     android:id="@+id/inform_useyes"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="임대 중"
-                                    android:layout_marginEnd="10dp"/>
+                                    android:layout_marginEnd="10dp"
+                                    android:text="임대 중" />
+
                                 <RadioButton
                                     android:id="@+id/inform_useno"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="임대 X"
-                                    android:layout_marginEnd="10dp"/>
+                                    android:layout_marginEnd="10dp"
+                                    android:text="임대 X" />
 
                         </RadioGroup>
 
